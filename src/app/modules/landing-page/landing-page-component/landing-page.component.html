@@ -1,0 +1,234 @@
+<div class="landing-wrapper">
+    <div class="container-fluid p-0 position-relative mb-5 landing-img">
+        <img src="assets/img/hero@2x.png" class="img-fluid" alt="...">
+
+        <div class="landing-nav">
+            <img src="assets/svg/Sllers-hub-logo.svg" class="logo" alt="">
+
+            <div class="landing-nav__menu">
+                <span>
+                    Ten12 Express
+                </span>
+                <span>
+                    Learning Center
+                </span>
+                <span class="nav-btn">
+                    Register
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <img src="assets/svg/circle-artifacts.svg" alt="" class="absolute-img__one">
+    <img src="assets/svg/Polygon 1.svg" alt="" class="absolute-img__two">
+    <img src="assets/svg/swirle-libe.svg" alt="" class="absolute-img__three">
+    <img src="assets/svg/ring-artifacts.svg" alt="" class="absolute-img__four">
+
+    <div class="narration-wrap position-relative mb-4 mt-5">
+
+        <h3>How it works</h3>
+        <p>
+            Become a member on the Ten12 platform by creating an account either using your social media account or
+            email account. Proceed to create store and begin upload of store details, then await your dashboard
+            where items can be uploaded and all inventory managed.
+        </p>
+    </div>
+
+    <div class="features-grid">
+        <div *ngFor="let feature of features" class="feature">
+            <img [src]="feature.iconUrl" class="feature-icon" alt="">
+
+            <span class="feature-title">
+                {{ feature.title }}
+            </span>
+            <span class="feature-content">
+                {{ feature.description }}
+            </span>
+        </div>
+    </div>
+
+    <div class="brand-details mb-5">
+        <div class="details-pre mb-4">
+            <h3>Why choose Ten12</h3>
+            <p>
+                Ten12 provides the right platform for sellers to promote their brand and store online, allowing them to
+                have personalized interaction with potential buyers.
+            </p>
+        </div>
+
+        <div class="brand-details__grid">
+            <div class="brand-details__info pt-5">
+                <div class="brand-line">
+                    <div class="brand-text">
+                        <h4>Market Coverage</h4>
+                        <p>Because at Ten12 we understand your need to reach a broader consumer base and make</p>
+                    </div>
+                    <img src="assets/icons/market-coverage.svg" class="rounded-img ml-3" alt="">
+                </div>
+
+                <div class="brand-line">
+                    <div class="brand-text">
+                        <h4>Trade experience</h4>
+                        <p>Kaiglo provides a user experience that allows even your most loyal customers to</p>
+                    </div>
+                    <img src="assets/icons/Trade-experience.svg" class="rounded-img ml-3" alt="">
+                </div>
+
+                <div class="brand-line">
+                    <div class="brand-text">
+                        <h4>Easy of transaction</h4>
+                        <p>On Ten12, mobile payment is made easy, fast and efficient and easier to boot.</p>
+                    </div>
+                    <img src="assets/icons/easy-of-transaction.svg" class="rounded-img ml-3" alt="">
+                </div>
+            </div>
+
+            <div class="brand-details__info">
+                <img src="assets/img/mobile-home.png" class="brand-image" alt="">
+            </div>
+
+            <div class="brand-details__info pt-5">
+                <div class="brand-line">
+                    <img src="assets/icons/brand-rec.svg" class="rounded-img mr-3" alt="">
+                    <div class="brand-text__right">
+                        <h4>Brand recognition</h4>
+                        <p>Do you yearn for a platform where your brand image can be improved and recognized?</p>
+                    </div>
+                </div>
+
+                <div class="brand-line">
+                    <img src="assets/icons/market-insight.svg" class="rounded-img mr-3" alt="">
+                    <div class="brand-text__right">
+                        <h4>Market insight</h4>
+                        <p>Kaiglo ensures that you can monitor your sales annually to know if you are excelling at a
+                        </p>
+                    </div>
+                </div>
+
+                <div class="brand-line">
+                    <img src="assets/icons/efficiency.svg" class="rounded-img mr-3" alt="">
+                    <div class="brand-text__right">
+                        <h4>Efficiency & trustworthy</h4>
+                        <p>Issue of quality and efficient service delivery is our watch word atTen12.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-details__wrapper mb-5">
+        <h3>Successful stories</h3>
+
+        <div class="post-panel position-relative">
+            <div class="dark-panel"></div>
+
+            <div class="post-details">
+                <img src="assets/img/seller-obinnapro.png" class="post-image" alt="">
+
+                <div class="post-content">
+                    <div class="post-content__top">
+                        <span class="tag">
+                            Store Owner
+                        </span>
+
+                        <h3>My Story</h3>
+                        <p>Ever since I joined Ten12, I have experienced improved sales due to their market insight
+                            data.</p>
+                    </div>
+
+                    <div class="post-content__bottom">
+                        <h3>ObinnaPro</h3>
+                        <p>CEO (Dope AF Inc)</p>
+
+                        <div class="circle-row">
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+
+                    <img src="assets/icons/bxs-right-arrow-circle.svg" class="right-arrow" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-wrapper">
+        <div class="footer-grid">
+            <div class="footer-content">
+                <span class="footer-title">
+                    Company information
+                </span>
+                <span class="footer-body">
+                    <span class="footer-text">Contact Us</span>
+                    <span class="footer-text">Job Opportunities</span>
+                    <span class="footer-text">Why Choose Kaiglo </span>
+                    <span class="footer-text">Terms and Conditions </span>
+                    <span class="footer-text">Privacy Policy </span>
+                    <span class="footer-text">About Us</span>
+                </span>
+            </div>
+
+            <div class="footer-content">
+                <span class="footer-title">
+                    Customer Service
+                </span>
+                <span class="footer-body">
+                    <span class="footer-text">Shipping & Delivery</span>
+                    <span class="footer-text">Kaiglo Express</span>
+                    <span class="footer-text">Return Policy</span>
+                    <span class="footer-text">FAQ & Support</span>
+                    <span class="footer-text">Top Searches</span>
+                    <span class="footer-text">Authentic Items</span>
+                    <span class="footer-text">Sitemap</span>
+                </span>
+            </div>
+
+            <div class="footer-content">
+                <span class="footer-title">
+                    Kaiglo Social
+                </span>
+                <span class="footer-body">
+                    <div class="social-grid">
+                        <img src="assets/social-media/facebook.svg" alt="">
+                        <img src="assets/social-media/twitter.svg" alt="">
+                        <img src="assets/social-media/instagram.svg" alt="">
+                        <img src="assets/social-media/messenger.svg" alt="">
+                        <img src="assets/social-media/telegram.svg" alt="">
+                        <img src="assets/social-media/youtube.svg" alt="">
+                        <img src="assets/social-media/pinterest.svg" alt="">
+                    </div>
+                </span>
+            </div>
+
+            <div class="footer-content">
+                <span class="footer-title">
+                    Make money with us
+                </span>
+                <span class="footer-body">
+                    <span class="footer-text">Sell on Kaiglo</span>
+                    <span class="footer-text">Become an Affiliate Partner</span>
+                </span>
+            </div>
+
+            <div class="footer-content">
+                <span class="footer-title">
+                    Download our Mobile App!
+                </span>
+                <span class="footer-body">
+                    <div class="app-store-grid">
+                        <img src="assets/icons/google@.png" class="mr-2" alt="">
+                        <img src="assets/icons/apple@.png" alt="">
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-footer">
+        <span>Copyright © 2020 KAIGLO STORES LIMITED. All Rights Reserved. User Agreement, </span>
+        <span class="link-text">Privacy and Cookies</span>
+    </div>
+</div>
