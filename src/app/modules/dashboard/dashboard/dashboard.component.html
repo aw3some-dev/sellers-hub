@@ -1,0 +1,86 @@
+<div class="dashboard-wrapper">
+    <div class="sidebar">
+        <div class="avatar-wrapper">
+            <img src="assets/img/store-profile.png" alt="">
+
+            <p>Saint Morris & Sons hoodlums Store</p>
+            <div class="avatar-btn">Visit Store</div>
+        </div>
+
+        <div class="sidebar-content">
+            <div *ngFor="let item of sidebarItems; let first = first" class="sidebar-item" [ngClass]="{'damp': first}">
+                <img [src]="item.iconUrl" alt="">
+                <span>{{ item.title }}</span>
+            </div>
+        </div>
+
+        <div class="logout">
+            Logout
+        </div>
+    </div>
+
+    <div class="dashboard-content">
+        <div class="dashboard-header">
+            <span>Welcome to <span class="bold-header">SellersHub</span></span>
+            <img src="assets/icons/Group 19223.svg" class="header-icon" alt="">
+        </div>
+
+        <div class="dashboard-summary__row">
+            <div class="dashboard-summary__item">
+                <img src="assets/svg/pending-orders.svg" class="summary-img" alt="">
+                <div class="summary-content">
+                    <span>0</span>
+                    <span>Pending Orders</span>
+                </div>
+            </div>
+
+            <div class="dashboard-summary__item">
+                <img src="assets/svg/visittors.svg" class="summary-img" alt="">
+
+                <div class="summary-content">
+                    <span>0</span>
+                    <span>Today’s Visitor</span>
+                </div>
+            </div>
+
+            <div class="dashboard-summary__item">
+                <img src="assets/svg/stock.svg" class="summary-img" alt="">
+
+                <div class="summary-content">
+                    <span>0</span>
+                    <span>Items in Stock</span>
+                </div>
+            </div>
+
+            <div class="dashboard-summary__item">
+                <img src="assets/svg/total-sales.svg" class="summary-img" alt="">
+
+                <div class="summary-content">
+                    <span>0</span>
+                    <span>Total Sales</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-reports__wrapper">
+            <div class="dashboard-report">
+                <div class="report-title">Store/ Product performance</div>
+            </div>
+            
+            <div class="dashboard-report">
+                <div class="report-title">Recent buyers</div>
+                
+            </div>
+            
+            <div class="dashboard-report">
+                <div class="report-title">Store details</div>
+                
+            </div>
+            
+            <div class="dashboard-report">
+                <div class="report-title">Best selling items</div>
+
+            </div>
+        </div>
+    </div>
+</div>

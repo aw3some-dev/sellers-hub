@@ -41,10 +41,12 @@
     font-size: 14px;
     line-height: 26px;
     font-weight: lighter;
+    z-index: 9999;
 }
 
 .landing-nav__menu span{
     font-size: .85em;
+    cursor: pointer;
 }
 
 .landing-nav__menu .nav-btn{

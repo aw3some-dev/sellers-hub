@@ -6,17 +6,18 @@ import { AppComponent } from './app.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LandingPageModule } from './modules/landing-page/landing-page.module';
+import { DashboardModule } from './modules/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    
+    AppComponent,    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    LandingPageModule
+    DashboardModule,
+    LandingPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

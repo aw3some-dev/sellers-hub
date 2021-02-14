@@ -30,4 +30,7 @@ export class LandingPageComponent implements OnInit {
   ngOnInit() {
   }
 
+  log(){
+    console.log('Work for fucks sake');
+  }
 }
