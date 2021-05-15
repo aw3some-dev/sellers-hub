@@ -19,7 +19,7 @@
         <div class="landing-nav">
             <img src="assets/svg/KG-sellers-hub-logo.svg" class="logo" alt="">
 
-            <img src="assets/svg/hamburger-menu.svg" class="hamburger-menu" alt="">
+            <img src="assets/svg/hamburger-menu.svg" class="hamburger-menu" alt="" (click)="renderSideDrawer()">
 
             <div class="landing-nav__menu">
                 <span>
@@ -35,6 +35,20 @@
                     To Dashboard
                 </span> -->
             </div>
+
+            <div class="side-drawer" [ngStyle]="{ display: showSideDrawer ? 'block' : 'none' }">
+                <span>
+                    Kaiglo Express
+                </span>
+                <span>
+                    Learning Center
+                </span>
+                <span class="nav-btn">
+                    Register
+                </span>
+            </div>
+
+            <div *ngIf="showSideDrawer" class="backdrop" (click)="renderSideDrawer()"></div>
         </div>
     </div>
 
