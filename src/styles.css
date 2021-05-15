@@ -9,6 +9,7 @@ body {
     font-family: 'Gotham-Book', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
 
 @font-face {

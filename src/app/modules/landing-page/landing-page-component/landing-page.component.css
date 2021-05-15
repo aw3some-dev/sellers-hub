@@ -9,7 +9,7 @@
 
 .landing-img{
     padding: 0;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
 }
 
 .landing-nav{
@@ -574,7 +574,7 @@
         height: auto; */
         margin-top: 80px;
         display: block;
-        background-image: url("/assets/img/hero-image@2x.png");
+        background-image: url('../../../../assets/img/hero-image@2x.png');
         background-repeat: no-repeat;
         background-size: cover;
         height: 500px;
