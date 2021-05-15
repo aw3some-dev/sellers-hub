@@ -2,7 +2,7 @@
 .landing-wrapper{
     background-color: #F8F8F8;
     position: relative;
-    z-index: -999;
+    z-index: 999;
     max-width: 100vw;
     overflow: hidden;
 }

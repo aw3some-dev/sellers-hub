@@ -16,8 +16,8 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    DashboardModule,
     LandingPageModule,
+    DashboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

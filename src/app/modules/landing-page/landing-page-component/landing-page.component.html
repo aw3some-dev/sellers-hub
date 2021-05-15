@@ -15,9 +15,9 @@
                 <span class="nav-btn">
                     Register
                 </span>
-                <!-- <span [routerLink]="['/', 'dashboard']" (click)="log()">
+                <span [routerLink]="['/dashboard']" style="position: relative; z-index: 9999; cursor: pointer">
                     To Dashboard
-                </span> -->
+                </span>
             </div>
         </div>
     </div>
@@ -36,6 +36,8 @@
             where items can be uploaded and all inventory managed.
         </p>
     </div>
+
+
 
     <div class="features-grid">
         <div *ngFor="let feature of features" class="feature">
