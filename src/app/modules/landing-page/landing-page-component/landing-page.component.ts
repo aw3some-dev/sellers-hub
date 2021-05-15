@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class LandingPageComponent implements OnInit {
 
   features = [
-    { iconUrl: 'assets/icons/become_member.svg', title: 'Become a member', description: 'Sign up for free on Ten12 and register an account using an email address.' },
-    { iconUrl: 'assets/icons/verify_acc.svg', title: 'Upload product', description: 'verification link to your email address. Click on the link to confirm registration.' },
-    { iconUrl: 'assets/icons/start-selling.svg',  title: 'Start Selling', description: 'Go straight to your dashboard, click on add item, follow the prompt and view all products' }
+    { iconUrl: 'assets/icons/become_member.svg', title: 'Become a member', description: 'Sign up to sell on SellersHub and reach millions of potential customers.' },
+    { iconUrl: 'assets/icons/verify_acc.svg', title: 'Upload product', description: 'Click on the verification link sent to you to confirm your registration' },
+    { iconUrl: 'assets/icons/start-selling.svg',  title: 'Start Selling', description: 'Upload your products and start selling!' }
   ];
 
   brandDetailsLeft = [

@@ -1,13 +1,29 @@
 <div class="landing-wrapper">
-    <div class="container-fluid p-0 position-relative mb-5 landing-img">
-        <img src="assets/img/hero@2x.png" class="img-fluid" alt="...">
+    <div class="landing-img container-fluid position-relative">
+        <img src="assets/img/hero-image@2x.png" class="img-fluid desktop-splash-img" alt="...">
+
+        <div class="splash-content">
+            <div class="splash-header">
+                Join the No.1 Ecommerce Platform in Nigeria
+            </div>
+            <div class="splash-sub-header">
+                Start making money now, it's easy and free
+            </div>
+            <button class="splash-btn">
+                Become a Seller
+            </button>
+        </div>
+
+        <div class="mobile-splash-image"></div> 
 
         <div class="landing-nav">
-            <img src="assets/svg/Sllers-hub-logo.svg" class="logo" alt="">
+            <img src="assets/svg/KG-sellers-hub-logo.svg" class="logo" alt="">
+
+            <img src="assets/svg/hamburger-menu.svg" class="hamburger-menu" alt="">
 
             <div class="landing-nav__menu">
                 <span>
-                    Ten12 Express
+                    Kaiglo Express
                 </span>
                 <span>
                     Learning Center
@@ -15,9 +31,9 @@
                 <span class="nav-btn">
                     Register
                 </span>
-                <span [routerLink]="['/dashboard']" style="position: relative; z-index: 9999; cursor: pointer">
+                <!-- <span [routerLink]="['/dashboard']" style="position: relative; z-index: 9999; cursor: pointer">
                     To Dashboard
-                </span>
+                </span> -->
             </div>
         </div>
     </div>
@@ -27,17 +43,13 @@
     <img src="assets/svg/swirle-libe.svg" alt="" class="absolute-img__three">
     <img src="assets/svg/ring-artifacts.svg" alt="" class="absolute-img__four">
 
-    <div class="narration-wrap position-relative mb-4 mt-5">
-
+    <div class="narration-wrap position-relative">
         <h3>How it works</h3>
         <p>
-            Become a member on the Ten12 platform by creating an account either using your social media account or
-            email account. Proceed to create store and begin upload of store details, then await your dashboard
-            where items can be uploaded and all inventory managed.
+            Become a member on the SellersHub platform by creating an account either using your social media account or email account. Proceed to create store and begin upload of store details
         </p>
     </div>
-
-
+    
 
     <div class="features-grid">
         <div *ngFor="let feature of features" class="feature">
@@ -54,19 +66,19 @@
 
     <div class="brand-details mb-5">
         <div class="details-pre mb-4">
-            <h3>Why choose Ten12</h3>
+            <h3>Why choose SellersHub</h3>
             <p>
-                Ten12 provides the right platform for sellers to promote their brand and store online, allowing them to
+                SellersHub provides the right platform for sellers to promote their brand and store online, allowing them to
                 have personalized interaction with potential buyers.
             </p>
         </div>
 
         <div class="brand-details__grid">
-            <div class="brand-details__info pt-5">
+            <div class="brand-details__info">
                 <div class="brand-line">
                     <div class="brand-text">
                         <h4>Market Coverage</h4>
-                        <p>Because at Ten12 we understand your need to reach a broader consumer base and make</p>
+                        <p>we understand your need to reach a broader consumer base and make smoother sales and huge profits; SellersHub as a platform is here to help.</p>
                     </div>
                     <img src="assets/icons/market-coverage.svg" class="rounded-img ml-3" alt="">
                 </div>
@@ -74,7 +86,7 @@
                 <div class="brand-line">
                     <div class="brand-text">
                         <h4>Trade experience</h4>
-                        <p>Kaiglo provides a user experience that allows even your most loyal customers to</p>
+                        <p>SellersHub provides a user experience that allows even your most loyal customers to still keep in touch and purchase from you anywhere they are in Nigeria.</p>
                     </div>
                     <img src="assets/icons/Trade-experience.svg" class="rounded-img ml-3" alt="">
                 </div>
@@ -82,7 +94,7 @@
                 <div class="brand-line">
                     <div class="brand-text">
                         <h4>Easy of transaction</h4>
-                        <p>On Ten12, mobile payment is made easy, fast and efficient and easier to boot.</p>
+                        <p>On SellersHub, mobile payment is made easy, fast and efficient.</p>
                     </div>
                     <img src="assets/icons/easy-of-transaction.svg" class="rounded-img ml-3" alt="">
                 </div>
@@ -92,12 +104,12 @@
                 <img src="assets/img/mobile-home.png" class="brand-image" alt="">
             </div>
 
-            <div class="brand-details__info pt-5">
+            <div class="brand-details__info">
                 <div class="brand-line">
                     <img src="assets/icons/brand-rec.svg" class="rounded-img mr-3" alt="">
                     <div class="brand-text__right">
                         <h4>Brand recognition</h4>
-                        <p>Do you yearn for a platform where your brand image can be improved and recognized?</p>
+                        <p>Do you yearn for a platform where your brand image can be improved and recognized? The SellersHub platform is perfect.</p>
                     </div>
                 </div>
 
@@ -105,7 +117,7 @@
                     <img src="assets/icons/market-insight.svg" class="rounded-img mr-3" alt="">
                     <div class="brand-text__right">
                         <h4>Market insight</h4>
-                        <p>Kaiglo ensures that you can monitor your sales annually to know if you are excelling at a
+                        <p>SellersHub ensures that you can monitor your sales annually to know if you are excelling at a particular trade to make better decision.
                         </p>
                     </div>
                 </div>
@@ -114,7 +126,7 @@
                     <img src="assets/icons/efficiency.svg" class="rounded-img mr-3" alt="">
                     <div class="brand-text__right">
                         <h4>Efficiency & trustworthy</h4>
-                        <p>Issue of quality and efficient service delivery is our watch word atTen12.</p>
+                        <p>Issue of quality and efficient service delivery is our watch word at SellersHub.</p>
                     </div>
                 </div>
             </div>
@@ -137,13 +149,12 @@
                         </span>
 
                         <h3>My Story</h3>
-                        <p>Ever since I joined Ten12, I have experienced improved sales due to their market insight
-                            data.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
                     </div>
 
                     <div class="post-content__bottom">
-                        <h3>ObinnaPro</h3>
-                        <p>CEO (Dope AF Inc)</p>
+                        <h3>ObinnaBoss</h3>
+                        <p>CEO (ObinnaBoss Fashion)</p>
 
                         <div class="circle-row">
                             <span class="circle"></span>
@@ -233,7 +244,7 @@
     </div>
 
     <div class="bottom-footer">
-        <span>Copyright © 2020 KAIGLO STORES LIMITED. All Rights Reserved. User Agreement, </span>
+        <span>Copyright © 2020 SellersHub STORES LIMITED. All Rights Reserved. User Agreement, </span>
         <span class="link-text">Privacy and Cookies</span>
     </div>
 </div>
