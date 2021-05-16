@@ -4,7 +4,6 @@ import { DashboardComponent } from './modules/dashboard/dashboard/dashboard.comp
 
 
 const routes: Routes = [
-  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
