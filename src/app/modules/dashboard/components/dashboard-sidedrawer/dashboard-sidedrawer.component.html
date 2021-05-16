@@ -1,0 +1,23 @@
+<div class="backdrop" (click)="closeSideDrawer()"></div>
+
+<div class="sidebar">
+    <div class="avatar-wrapper">
+        <img src="assets/img/store-profile.png" alt="">
+
+        <p>Saint Morris & Sons hoodlums Store</p>
+        <div class="avatar-btn">Visit Store</div>
+    </div>
+
+    <div class="sidebar-content">
+        <div *ngFor="let item of sidebarItems; let first = first" class="sidebar-item" [ngClass]="{'damp': first}">
+            <img [src]="item.iconUrl" alt="">
+            <span>{{ item.title }}</span>
+
+            <img *ngIf="item.title === 'Add Product'" src="assets/icons/icon - add product.svg" alt="" class="add-icon">
+        </div>
+    </div>
+
+    <div class="logout">
+        Logout
+    </div>
+</div>

@@ -1,0 +1,102 @@
+/* Sidebar */
+.sidebar{
+    background-color: #FFFFFF;
+    width: 70%;
+    height: 100vh;
+    padding: 30px 10px;
+    position: fixed;
+    z-index: 9999;
+    transition: all 0.5s;
+}
+
+.avatar-wrapper{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.avatar-wrapper img{
+    margin: 0 auto 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.avatar-wrapper p{
+    margin: 0 auto 10px;
+    width: 50%;
+    font-size: 10px;
+    font-weight: lighter;
+    color: #727272;
+}
+
+.add-icon{
+    position: absolute;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.avatar-wrapper .avatar-btn{
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: lighter;
+    background-color: #004D47;
+    color: #FFFFFF;
+    width: 40%;
+    padding: 7px;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+}
+
+.sidebar-content{
+    padding: 5px;
+}
+
+.sidebar-item{
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 11px;
+    color: #151716;
+    vertical-align: middle;
+    align-items: center;
+    padding: 7px 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.sidebar-item span{
+    display: inline-block;
+    margin-left: 9px;
+}
+
+.damp{
+    background-color: #F0F0F0;
+}
+
+.logout{
+    margin-top: 165px;
+    text-align: center;
+    color: #727272;
+    font-weight: bolder;
+    font-size: 12px;
+    position: relative;
+    bottom: 20px;
+}
+
+.backdrop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* Sidebar */
