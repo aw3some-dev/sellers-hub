@@ -1,4 +1,8 @@
 <div class="dashboard-wrapper">
+
+    <app-dashboard-sidedrawer *ngIf="showSideDrawer" [sidebarItems]="sidebarItems"
+        (sideDrawerClosed)="renderSideDrawer()"></app-dashboard-sidedrawer>
+
     <div class="sidebar">
         <div class="avatar-wrapper">
             <img src="assets/img/store-profile.png" alt="">
@@ -11,7 +15,9 @@
             <div *ngFor="let item of sidebarItems; let first = first" class="sidebar-item" [ngClass]="{'damp': first}">
                 <img [src]="item.iconUrl" alt="">
                 <span>{{ item.title }}</span>
-            </div>
+                
+            <img *ngIf="item.title === 'Add Product'" src="assets/icons/icon - add product.svg" alt="" class="add-icon">
+        </div>
         </div>
 
         <div class="logout">
@@ -21,7 +27,11 @@
 
     <div class="dashboard-content">
         <div class="dashboard-header">
-            <span>Welcome to <span class="bold-header">SellersHub</span></span>
+            <span id="dashboard-title">
+                <img src="assets/svg/Group 19444.svg" class="hamburger-menu" alt="" (click)="renderSideDrawer()">
+
+                Welcome to <span class="bold-header">SellersHub</span>
+            </span>
             <img src="assets/icons/Group 19223.svg" class="header-icon" alt="">
         </div>
 
@@ -63,24 +73,145 @@
         </div>
 
         <div class="dashboard-reports__wrapper">
+            <!-- Store/Product Performance -->
             <div class="dashboard-report">
                 <div class="report-title">Store/ Product performance</div>
+                <div class="report-body">
+                    <img src="assets/img/line-chart.png" alt="" class="line-chart">
+
+                    <div class="performance-legend">
+                        <div class="point-wrapper">
+                            <div class="point green">154</div>
+                            <span>Product views</span>
+                        </div>
+
+                        <div class="point-wrapper">
+                            <div class="point purple">39</div>
+                            <span>Store visit</span>
+                        </div>
+
+                        <div class="point-wrapper">
+                            <div class="point orange">193</div>
+                            <span>Total Traffic</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+            <!-- Store/Product Performance -->
+
+            <!-- Recent Buyers Section -->
             <div class="dashboard-report">
                 <div class="report-title">Recent buyers</div>
-                
+                <div *ngFor="let avatar of avatarGroup" class="avatar-report">
+                    <img [src]="avatar.iconUrl" alt="" class="avatar-img">
+
+                    <div class="avatar-paragraph">
+                        <h5>{{ avatar.title }}</h5>
+                        <p>
+                            <a class="avatar-content-title">Product: </a>
+                            {{ avatar.content }}
+                        </p>
+                    </div>
+
+                    <div class="avatar-btn">
+                        <img src="assets/svg/icon - message.svg" alt="">
+                        <span>Chat Buyer</span>
+                    </div>
+                </div>
             </div>
-            
+            <!-- Recent Buyers Section -->
+
+
+            <!-- Store Details -->
             <div class="dashboard-report">
                 <div class="report-title">Store details</div>
-                
+                <div class="store-details__wrapper">
+                    <div class="store-details">
+                        <div class="store-profile">
+                            <img src="assets/img/store-profile@2x.png" alt="" class="store-img">
+                            <img src="assets/svg/verified.svg" alt="" class="verified">
+                        </div>
+
+                        <div class="store-history">
+                            <h5>Saint Morris & Sons hoodlums Store</h5>
+                            <p>Hoodlum is a 1997 American crime drama film that gives a fictionalized account of the
+                                gang war between the Italian/Jewish mafia alliance and the black gangsters of Harlem
+                                that took place in the late 1920s and early 1930s</p>
+                        </div>
+                    </div>
+
+                    <div class="store-summary">
+                        <div class="store-report">
+                            <div class="store-statistic">
+                                <p>50</p>
+                                <p>SUCCESSFUL SALES</p>
+                            </div>
+                            <div class="store-statistic">
+                                <p>153</p>
+                                <p>PRODUCTS</p>
+                            </div>
+                            <div class="store-statistic">
+                                <p>225k</p>
+                                <p>FOLLOWERS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="store-progress">
+                        <div class="store-progress-item">
+                            <span>PRODUCT QUALITY:</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 23%; background-color: #FFB300" aria-valuenow="23" aria-valuemin="0"
+                                    aria-valuemax="100">23%</div>
+                            </div>
+                        </div>
+                        <div class="store-progress-item">
+                            <span>DELIVERY RATE:</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 68%; background-color: #FFB300" aria-valuenow="68" aria-valuemin="0"
+                                    aria-valuemax="100">68%</div>
+                            </div>
+                        </div>
+                        <div class="store-progress-item">
+                            <span>COMMUNICATION:</span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 89%; background-color: #FFB300" aria-valuenow="89" aria-valuemin="0"
+                                    aria-valuemax="100">89%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+            <!-- Store Details -->
+
+
+            <!-- Best Selling Items -->
             <div class="dashboard-report">
                 <div class="report-title">Best selling items</div>
+                <div class="sales-report">
+                    <div *ngFor="let salesItem of salesGroup" class="sales-item">
+                        <img [src]="salesItem.iconUrl" alt="" class="sales-img">
 
+                        <div class="sales-content">
+                            <span>{{ salesItem.title }}</span>
+                            <div class="sales-content__summary">
+                                <div class="sales-summary">
+                                    <h5>Sold</h5>
+                                    <p>200,000</p>
+                                </div>
+                                <div class="sales-summary">
+                                    <h5>Total Sales</h5>
+                                    <p>2,100,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Best Selling Items -->
         </div>
     </div>
 </div>

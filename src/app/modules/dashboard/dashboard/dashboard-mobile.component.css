@@ -1,0 +1,220 @@
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar{
+        display: none;
+    }
+
+    .dashboard-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px  7px;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        margin-top: -6px;
+        cursor: pointer;
+    }
+
+    .dashboard-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dashboard-content{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .dashboard-summary__row{
+        flex-wrap: wrap;
+    }
+
+    .dashboard-summary__item{
+        width: 48%;
+        padding: 15px;
+        margin-bottom: 13px;
+    }
+    
+    .dashboard-summary__item .summary-img{
+        margin-right: 6px;
+        height: 30px;
+        width: 30px;
+    }
+    
+    .dashboard-summary__item .summary-content span:nth-child(1){
+        display: block;
+        font-size: .9em;
+        margin-bottom: .5px;
+        color: #151716;
+    }
+    
+    .dashboard-summary__item .summary-content span:nth-child(2){
+        display: block;
+        font-size: .7em;
+        font-weight: 300;
+        color: #727272;
+    }
+
+    .dashboard-reports__wrapper{
+        height: 60vh;
+    }
+
+    .dashboard-report{
+        width: 100%;
+        padding-bottom: 0 10px 30px;
+    }
+
+    /* Best Selling Items */
+    .sales-item{
+        width: 100%;
+        padding: 6px;
+        margin-bottom: 20px;
+    }
+    /* Best Selling Items */
+
+
+    /* Store Details */
+    .store-img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .store-history{
+        width: 80%;
+    }
+    
+    .store-history h5{
+        font-weight: 900;
+        font-size: .85em;
+        color: #151716;
+    }
+    
+    .store-history p{
+        font-weight: 300;
+        font-size: .7em;
+        color: #727272;
+    }
+    
+    .verified{
+        height: 20px;
+        width: 20px;
+    }
+
+    .store-summary{
+        padding: 10px;
+    }
+
+    .store-report{
+        padding: 5px;
+    }
+    
+    .store-statistic{
+        font-weight: 400;
+        font-size: .75em;
+        padding: 10px;
+    }
+    
+    .store-statistic p {
+        margin-bottom: 2px;
+    }
+
+    .store-statistic p:nth-child(1){
+        font-size: .9em;
+    }
+    
+    .store-statistic p:nth-child(2){
+        font-size: .5em;    }
+
+    .progress{
+        width: 55% !important;
+        font-size: .6rem !important;
+        height: 14px !important;
+        margin-top: 3px;
+    }
+
+    .store-progress {
+        padding: 10px;
+    }
+
+    .store-progress-item{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .store-progress-item span{
+        color: #161616;
+        font-size: .6em;
+    }
+    /* Store Details */
+
+    
+    /* Avatar Group Report */
+    .avatar-report{
+    }
+
+    .avatar-report .avatar-img{
+        width: 40px;
+        height: 40px;
+        margin: 0 4px;
+    }
+
+    .avatar-paragraph{
+        width: 65%;
+    }
+
+    .avatar-paragraph h5{
+        font-size: .8em;
+        font-weight: 500;
+        margin: 2px;
+    }
+
+    .avatar-paragraph p{
+        font-size: .65em;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .avatar-content-title {
+        display: block;
+    }
+
+    .avatar-btn{
+        width: 20%;
+        text-align: center;
+        vertical-align: baseline;
+        /* border: 1px solid #1666b6; */
+    }
+
+    .avatar-btn img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .avatar-btn span{
+        font-weight: 300;
+        font-size: .6em;
+        color: #727272;
+        display: block;
+        text-align: center;
+    }
+    /* Avatar Group Report */
+
+
+    /* Store performance */
+    .point{
+        font-size: .65em;
+        font-weight: 300;
+        padding: 3px;
+        width: 50px;
+        border-radius: 12px;
+        text-align: center;
+    }
+    /* Store performance */
+}

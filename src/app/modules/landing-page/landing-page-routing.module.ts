@@ -4,7 +4,8 @@ import { LandingPageComponent } from './landing-page-component/landing-page.comp
 
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent }
+  { path: '', component: LandingPageComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
